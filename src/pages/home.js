@@ -6,13 +6,22 @@ import Products from "../componenets/body-components/products/product";
 import Contact from "../componenets/body-components/contact/contact";
 import Footer from "../componenets/footer/footer";
 import { windowWidth } from "../const";
-const Home=()=>{
-    // if (WindowWidth>1024) {
+
+const Home=(props)=>{
+    const SetHomeClicked=()=>{
+        window.scrollTo(0,200);
+    }
+    const SetAboutClicked=()=>{
+        window.scrollTo(300,500);
+    }
+    const SetContactClicked=()=>{
+        window.scrollTo(1500,1700);
+    }
         return (
             <div className="justify-content-center" style={{width:'100%',height:"auto",position:"relative"}}>
 
             
-            <NavBar></NavBar>
+            <NavBar scrollToHome={SetHomeClicked} scrollToAbout={SetAboutClicked} scrollToContact={SetContactClicked}></NavBar>
             <Body></Body>
             <About></About>
             <Banner></Banner>
@@ -24,18 +33,6 @@ const Home=()=>{
             
             </div>
         )
-    // }else{
-    //     return (
-    //         <>
-    //         <NavBar></NavBar>
-    //         <Body></Body>
-    //         <About></About>
-    //         <Products></Products>
-    //         <Contact></Contact>
-    //         <Footer></Footer>
-    //         </>
-    //     )
-    // }
 
 }
 
