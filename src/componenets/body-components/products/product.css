@@ -1,0 +1,15 @@
+.productsContainer{
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.productsContainer h2{
+    font-size: 30px;
+    font-family: "Satisfy", cursive;
+    font-weight: bold;
+    color: rgb(255, 155, 14);
+}

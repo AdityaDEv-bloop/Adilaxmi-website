@@ -1,3 +1,14 @@
+# Install Fnm 
+winget install Schniz.fnm
+
+# Setting Environment
+export PATH=/home/$USER/.fnm:$PATH
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
+
+# Install Node using Fnm
+fnm use --install-if-missing 20
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

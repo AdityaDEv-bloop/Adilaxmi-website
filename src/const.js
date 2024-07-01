@@ -1,0 +1,1 @@
+export const primarryColor = "#FF0A00";

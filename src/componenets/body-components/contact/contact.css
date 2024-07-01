@@ -1,0 +1,40 @@
+.contactContainer{
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+.contactContainer h2{
+    font-size: 30px;
+    font-family: "Satisfy", cursive;
+    font-weight: bold;
+    color: rgb(255, 155, 14);
+}
+
+.contactInfoContainer{
+    width: "100%";
+    text-align: left;
+}
+
+.contactText{
+    position: absolute;
+    margin: auto;
+    top:120px;
+  width: 80%;
+  left: 10%;
+  padding: 10px;
+}
+.contactNumber{
+    margin: auto;
+    top:420px;
+  width: 100%;
+}
+.contactText h1{
+    font-size:55px;
+    font-family:"Oswald", sans-serif;
+    color: rgb(86, 86, 86);
+}

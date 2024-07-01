@@ -1,0 +1,34 @@
+
+.aboutContainer{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.aboutheading{
+    font-size: 30px;
+    font-family: "Satisfy", cursive;
+    font-weight: bold;
+    color: rgb(255, 155, 14);
+}
+.aboutContain{
+    text-align:center;
+    margin: auto;
+  width: 70%;
+  left: 15%;
+  padding: 10px;
+}
+
+.aboutContain p{
+    font-size: 16px;
+    font-family: "Playwrite NG Modern", cursive;
+    color: rgb(62, 62, 62);;
+}
+
+.aboutContain h2{
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    color: rgb(16, 16, 16);;
+}

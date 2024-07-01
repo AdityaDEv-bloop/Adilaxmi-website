@@ -1,0 +1,9 @@
+.bannerContainer{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px;
+    overflow: hidden;
+}
