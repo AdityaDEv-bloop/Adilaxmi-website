@@ -6,25 +6,39 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import { windowWidth } from "../../../const";
+import database from "../../firebaseconfig";
+import {set,ref} from 'firebase/database';
+import Alert from 'react-bootstrap/Alert';
 
 const Contact=()=>{
     const [name,setName] =  useState(null);
     const [email,setEmail] = useState(null);
     const [message,setMessage] = useState(null);
+    const [feedBack,setFeedBack] = useState(null);
+    const [isError,setIsError] = useState(null);
 
     const handleSubmit = (event) => {
+        setFeedBack(null);
+        setIsError(null);
         event.preventDefault();
-        console.log(
-            {
+        try {
+            const d = new Date();
+            set(ref(database, 'enquery/'+d), {
                 "name":name,
                 "email": email,
                 "message":message
-            }
-        )
+            });
+            setFeedBack('Thank you for your enquery, we will get back to you soon');
+            setIsError(false);
+        } catch (error) {
+            setIsError(true);
+            setFeedBack("Somthing went wrong, please try sometime later");
+        }
     }
   if (windowWidth && windowWidth>768) {
     return(
         <div className="contactContainer">
+            {isError===false?<Alert variant='success' >{feedBack}</Alert>:isError===true?<Alert variant='danger' >{feedBack}</Alert>:<div></div>}
             <h2>For Instant Enquiry</h2>
             <Row>
                 <Col>
