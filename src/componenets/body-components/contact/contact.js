@@ -3,25 +3,25 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { windowWidth } from "../../../const";
 
 const Contact=()=>{
-    const [validated, setValidated] = useState(false);
+    const [name,setName] =  useState(null);
+    const [email,setEmail] = useState(null);
+    const [message,setMessage] = useState(null);
 
     const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
         event.preventDefault();
-        event.stopPropagation();
+        console.log(
+            {
+                "name":name,
+                "email": email,
+                "message":message
+            }
+        )
     }
-
-    setValidated(true);
-  };
   if (windowWidth && windowWidth>768) {
     return(
         <div className="contactContainer">
@@ -42,20 +42,20 @@ const Contact=()=>{
                 <Card style={{ marginTop:40}}>
         <Card.Body style={{ backgroundColor:"#CFCFCF"}}>
             <Row>
-                <Form style={{textAlign:'left'}}>
+                <Form style={{textAlign:'left'}} onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput2" >
                         <Form.Label>Name</Form.Label>
-                        <Form.Control type="email" placeholder="Jhon Doe" />
+                        <Form.Control type="text" required placeholder="Jhon Doe" value={name} onChange={(e)=>setName(e.target.value)}  />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
+                        <Form.Control type="email" required placeholder="name@example.com"  value={email} onChange={(e)=>setEmail(e.target.value)}/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control as="textarea" required minLength={50} maxLength={500} rows={3} value={message} onChange={(e)=>setMessage(e.target.value)} />
                     </Form.Group>
-                    <Button variant="primary">Submit</Button>
+                    <Button variant="primary" type="submit">Submit</Button>
                 </Form>
             </Row>
         </Card.Body>
@@ -76,20 +76,20 @@ const Contact=()=>{
                 <Card style={{ marginTop:40}}>
         <Card.Body style={{ backgroundColor:"#CFCFCF"}}>
             <Row>
-                <Form style={{textAlign:'left'}}>
+                <Form style={{textAlign:'left'}} onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput2" >
                         <Form.Label>Name</Form.Label>
-                        <Form.Control type="email" placeholder="Jhon Doe" />
+                        <Form.Control type="text" required placeholder="Jhon Doe" value={name} onChange={(e)=>setName(e.target.value)} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
+                        <Form.Control type="email" required placeholder="name@example.com" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control as="textarea" required minLength={50} maxLength={500} rows={3} value={message} onChange={(e)=>setMessage(e.target.value)}/>
                     </Form.Group>
-                    <Button variant="primary">Submit</Button>
+                    <Button variant="primary" type="submit">Submit</Button>
                 </Form>
             </Row>
         </Card.Body>
@@ -102,7 +102,7 @@ const Contact=()=>{
         </div>
     )
   }
-    
+
 }
 
 export default Contact;
