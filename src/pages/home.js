@@ -5,8 +5,8 @@ import Banner from "../componenets/banner/banner";
 import Products from "../componenets/body-components/products/product";
 import Contact from "../componenets/body-components/contact/contact";
 import Footer from "../componenets/footer/footer";
+import { windowWidth } from "../const";
 const Home=()=>{
-    const WindowWidth  = (typeof window !== undefined)? window.innerWidth:null
     // if (WindowWidth>1024) {
         return (
             <div className="justify-content-center" style={{width:'100%',height:"auto",position:"relative"}}>
@@ -19,6 +19,9 @@ const Home=()=>{
             <Products></Products>
             <Contact></Contact>
             <Footer></Footer>
+            
+            <a className="fixed-bottom" style={windowWidth>768?{bottom:20,left:'92%'}:{bottom:20,left:'80%'}} aria-label="Chat on WhatsApp" href="https://wa.me/+916290873065"> <img width={windowWidth>768?80:60} height={windowWidth>768?80:60} alt="Chat on WhatsApp" src={require('../static/images/whatsapplogo.png')} /></a>
+            
             </div>
         )
     // }else{

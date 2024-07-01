@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { windowWidth } from "../../../const";
 
 const Contact=()=>{
     const [validated, setValidated] = useState(false);
@@ -21,6 +22,7 @@ const Contact=()=>{
 
     setValidated(true);
   };
+  if (windowWidth && windowWidth>768) {
     return(
         <div className="contactContainer">
             <h2>For Instant Enquiry</h2>
@@ -65,6 +67,42 @@ const Contact=()=>{
     
         </div>
     )
+  }else{
+    return(
+        <div className="contactContainer">
+            <h2>For Instant Enquiry</h2>
+            <Row>
+                <Col>
+                <Card style={{ marginTop:40}}>
+        <Card.Body style={{ backgroundColor:"#CFCFCF"}}>
+            <Row>
+                <Form style={{textAlign:'left'}}>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput2" >
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control type="email" placeholder="Jhon Doe" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="name@example.com" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Example textarea</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                    </Form.Group>
+                    <Button variant="primary">Submit</Button>
+                </Form>
+            </Row>
+        </Card.Body>
+
+    </Card>
+                </Col>
+            </Row>
+    
+    
+        </div>
+    )
+  }
+    
 }
 
 export default Contact;
