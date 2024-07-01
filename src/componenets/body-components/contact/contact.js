@@ -85,6 +85,7 @@ const Contact=()=>{
     return(
         <div className="contactContainer">
             <h2>For Instant Enquiry</h2>
+            {isError===false?<Alert variant='success' >{feedBack}</Alert>:isError===true?<Alert variant='danger' >{feedBack}</Alert>:<div></div>}
             <Row>
                 <Col>
                 <Card style={{ marginTop:40}}>
