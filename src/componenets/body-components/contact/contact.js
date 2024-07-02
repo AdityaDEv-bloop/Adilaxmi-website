@@ -9,6 +9,7 @@ import { windowWidth } from "../../../const";
 import database from "../../firebaseconfig";
 import {set,ref} from 'firebase/database';
 import Alert from 'react-bootstrap/Alert';
+import { MdMarkEmailRead, MdOutlineCall } from "react-icons/md";
 
 const Contact=()=>{
     const [name,setName] =  useState(null);
@@ -46,15 +47,18 @@ const Contact=()=>{
                         <div className="contactText">
                             <h1>Contact Us</h1>
                             <h1> For More Information </h1>
+                            <p>Enter your enquery here, our team will be contact you soon</p>
+                            <p>We are happy to serve you.</p>
+                        </div>
+                        <div className="contactInfo">
+                            <li><MdOutlineCall/> : +91 6290873065</li>
+                            <li><MdMarkEmailRead/> : contact@adilaxmiexports.com</li>
                         </div>
                     </div>
-                   
-                    
-                    
                 </Col>
                 <Col>
-                <Card style={{ marginTop:40}}>
-        <Card.Body style={{ backgroundColor:"#CFCFCF"}}>
+                <Card style={{ marginTop:40,borderStyle:'none'}}>
+        <Card.Body style={{ backgroundColor:"#CFCFCF",width:'75%',marginLeft:"12.5%"}}>
             <Row>
                 <Form style={{textAlign:'left'}} onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput2" >
@@ -85,7 +89,7 @@ const Contact=()=>{
     return(
         <div className="contactContainer">
             <h2>For Instant Enquiry</h2>
-            {isError===false?<Alert variant='success' >{feedBack}</Alert>:isError===true?<Alert variant='danger' >{feedBack}</Alert>:<div></div>}
+            {isError===false?<Alert variant='success' >{feedBack}</Alert>:isError===true?<Alert variant='danger' >{feedBack}</Alert>:<div></div>}456
             <Row>
                 <Col>
                 <Card style={{ marginTop:40}}>
