@@ -88,8 +88,8 @@ const Contact=()=>{
   }else{
     return(
         <div className="contactContainer">
-            <h2>For Instant Enquiry</h2>
-            {isError===false?<Alert variant='success' >{feedBack}</Alert>:isError===true?<Alert variant='danger' >{feedBack}</Alert>:<div></div>}456
+            <h3>For Instant Enquiry</h3>
+            {isError===false?<Alert variant='success' >{feedBack}</Alert>:isError===true?<Alert variant='danger' >{feedBack}</Alert>:<div></div>}
             <Row>
                 <Col>
                 <Card style={{ marginTop:40}}>
