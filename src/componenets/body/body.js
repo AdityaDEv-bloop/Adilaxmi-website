@@ -18,7 +18,20 @@ const Body=()=>{
         </div>
     )
   }
-  else{
+  else if (windowWidth && windowWidth>1400) {
+    return(
+      <div className="container-body">
+        <video className='imageContainer' autoPlay muted loop >
+          <source src={require('../../static/images/video.mp4')} type="video/mp4"/>
+        </video>
+        <div className='videoOverley'></div>
+        <div className='titelContainer'>
+            <h2 className='titleMain-big'>ADI LAXMI <span className='titelSpan-small'>Exports</span></h2>
+            <p className='titleParagraph-big'>World’s Largest Rice Millers and Basmati Rice Exporters</p>
+        </div>
+      </div>
+  )
+  }else{
     return(
       <div className="container-body-small">
         <video className='imageContainer-small' autoPlay muted loop >
