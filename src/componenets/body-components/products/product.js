@@ -93,7 +93,7 @@ const Products=()=>{
                             </Card.Footer>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col style={{padding:5}}>
                         <Card style={{ width: '10rem',height:"18rem" }}>
                             <Card.Img variant="top" src={require('../../../static/images/rice1.jpg')} />
                             <Card.Body>
@@ -107,11 +107,11 @@ const Products=()=>{
                             </Card.Footer>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col style={{padding:5}}>
                         <Card style={{ width: '10rem',height:"18rem" }}>
                         <Card.Img variant="top" src={require('../../../static/images/rice3.jpg')} />
                         <Card.Body>
-                            <Card.Title><h4>SUGANDHA NON-BASMATI RICE</h4></Card.Title>
+                            <Card.Title><h4>Sugandha Non-Bamati Rice</h4></Card.Title>
                             {/* <Card.Text>
                             <p>Sugandha Basmati Rice is highly aromatic and is appreciated for its slender grains and delicious taste. Nutritional value of Sugandha Basmati Rice is quite high.</p>
                             </Card.Text> */}
@@ -121,11 +121,11 @@ const Products=()=>{
                             </Card.Footer>
                         </Card>
                         </Col>
-                        <Col>
+                        <Col style={{padding:5}}>
                         <Card style={{ width: '10rem',height:"18rem" }}>
                         <Card.Img variant="top" src={require('../../../static/images/rice4.jpg')} />
                         <Card.Body>
-                            <Card.Title><h4>PESTICIDE RESIDUE FREE RAW RICE</h4></Card.Title>
+                            <Card.Title><h4>Pesticide Reduced Free Raw Rice</h4></Card.Title>
                             {/* <Card.Text>
                             <p>After Paddy is harvested,it's inedible husk is removed, Post husk removal, rice goes through polishing to remove the bran & then we get the white rice</p>
                             </Card.Text> */}
