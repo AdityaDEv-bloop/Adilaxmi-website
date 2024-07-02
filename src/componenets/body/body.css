@@ -49,6 +49,11 @@
     font-family:"Oswald", sans-serif;
     color: aliceblue;
 }
+.titleMain-big{
+    font-size:80px;
+    font-family:"Oswald", sans-serif;
+    color: aliceblue;
+}
 .titelContainer{
     position: absolute;
     top:300px;
@@ -88,6 +93,12 @@
 .titleParagraph-small{
     font-family: "Playwrite NG Modern", cursive;
     font-size: 12px;
+    color: rgb(255, 191, 118);
+    font-weight: normal;
+}
+.titleParagraph-big{
+    font-family: "Playwrite NG Modern", cursive;
+    font-size: 20px;
     color: rgb(255, 191, 118);
     font-weight: normal;
 }
