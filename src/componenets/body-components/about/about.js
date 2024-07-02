@@ -21,7 +21,7 @@ const About=()=>{
         return(
             <div className="aboutContainer">
                 <h4 className='aboutheading'>About Us</h4>
-                <div className='aboutContain'>
+                <div className='aboutContain-small'>
                     <h2>An Exporter of Organic Pesticide-Free Rice with a Customer-First Approach!</h2>
                     <p>Leading basmati rice exporters in India must comprehend the needs and desires of their customers in order to provide goods of unparalleled quality and remarkable value. Harvesting the best produce from nature and packaging only the best specialized grains and consumables for families worldwide has allowed us to become one of India's top exporters of rice. From farm to fork, our fully integrated operations have access to and control over the whole supply chain. </p>
                     <h2>Reliable & Lawfully Accredited Certified Services</h2>
