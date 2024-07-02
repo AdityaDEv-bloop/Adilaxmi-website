@@ -80,7 +80,7 @@ const Products=()=>{
                 <Container style={{marginTop:40}}>
                     <Row>
                         <Col style={{padding:5}}>
-                        <Card style={{ width: '9rem',height:"18rem" }}>
+                        <Card style={{ width: '10rem',height:"18rem" }}>
                             <Card.Img variant="top" src={require('../../../static/images/rice2.jpg')} />
                             <Card.Body>
                                 <Card.Title><h4>1121 Basmati Rice</h4></Card.Title>
@@ -94,7 +94,7 @@ const Products=()=>{
                             </Card>
                         </Col>
                         <Col>
-                        <Card style={{ width: '9rem',height:"18rem" }}>
+                        <Card style={{ width: '10rem',height:"18rem" }}>
                             <Card.Img variant="top" src={require('../../../static/images/rice1.jpg')} />
                             <Card.Body>
                                 <Card.Title><h4>1718 Basmati Rice</h4></Card.Title>
@@ -108,7 +108,7 @@ const Products=()=>{
                             </Card>
                         </Col>
                         <Col>
-                        <Card style={{ width: '9rem',height:"18rem" }}>
+                        <Card style={{ width: '10rem',height:"18rem" }}>
                         <Card.Img variant="top" src={require('../../../static/images/rice3.jpg')} />
                         <Card.Body>
                             <Card.Title><h4>SUGANDHA NON-BASMATI RICE</h4></Card.Title>
@@ -122,7 +122,7 @@ const Products=()=>{
                         </Card>
                         </Col>
                         <Col>
-                        <Card style={{ width: '9rem',height:"18rem" }}>
+                        <Card style={{ width: '10rem',height:"18rem" }}>
                         <Card.Img variant="top" src={require('../../../static/images/rice4.jpg')} />
                         <Card.Body>
                             <Card.Title><h4>PESTICIDE RESIDUE FREE RAW RICE</h4></Card.Title>
