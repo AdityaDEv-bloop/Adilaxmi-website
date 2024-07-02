@@ -29,7 +29,7 @@ const Home=(props)=>{
             <Contact></Contact>
             <Footer></Footer>
             
-            <a className="fixed-bottom" style={windowWidth>768?{bottom:20,left:'92%'}:{bottom:20,left:'80%'}} aria-label="Chat on WhatsApp" href="https://wa.me/+916290873065"> <img width={windowWidth>768?80:60} height={windowWidth>768?80:60} alt="Chat on WhatsApp" src={require('../static/images/whatsapplogo.png')} /></a>
+            <a className="fixed-bottom" style={windowWidth>768?{bottom:20,left:'92%'}:{bottom:20,left:'80%'}} aria-label="Chat on WhatsApp" href="https://wa.me/+919596013604"> <img width={windowWidth>768?80:60} height={windowWidth>768?80:60} alt="Chat on WhatsApp" src={require('../static/images/whatsapplogo.png')} /></a>
             
             </div>
         )
