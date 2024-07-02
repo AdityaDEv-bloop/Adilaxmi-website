@@ -1,5 +1,5 @@
 .contactContainer{
-    margin-top: 40px;
+    margin-top: 90px;
     height: auto;
     width: 100%;
     text-align: center;
@@ -96,4 +96,11 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 14px;
+}
+
+.contactContainer h3{
+    font-size: 20px;
+    font-family: "Satisfy", cursive;
+    font-weight: bold;
+    color: rgb(255, 155, 14);
 }
