@@ -45,7 +45,7 @@ const Products=()=>{
                         <Card style={{ width: '18rem',height:"32rem" }}>
                         <Card.Img variant="top" src={require('../../../static/images/rice3.jpg')} />
                         <Card.Body>
-                            <Card.Title><h3>SUGANDHA NON-BASMATI RICE</h3></Card.Title>
+                            <Card.Title><h3>Sugandha Non-Bamati Rice</h3></Card.Title>
                             <Card.Text>
                             <p>Sugandha Basmati Rice is highly aromatic and is appreciated for its slender grains and delicious taste. Nutritional value of Sugandha Basmati Rice is quite high.</p>
                             </Card.Text>
@@ -59,7 +59,7 @@ const Products=()=>{
                         <Card style={{ width: '18rem',height:"32rem" }}>
                         <Card.Img variant="top" src={require('../../../static/images/rice4.jpg')} />
                         <Card.Body>
-                            <Card.Title><h3>PESTICIDE RESIDUE FREE RAW RICE</h3></Card.Title>
+                            <Card.Title><h3>Pesticide Reduced Free Raw Rice</h3></Card.Title>
                             <Card.Text>
                             <p>After Paddy is harvested,it's inedible husk is removed, Post husk removal, rice goes through polishing to remove the bran & then we get the white rice</p>
                             </Card.Text>
