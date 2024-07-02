@@ -1,11 +1,22 @@
 # Install Fnm 
-winget install Schniz.fnm
+# for windows
+winget install Schniz.fnm 
 
 # Setting Environment
 export PATH=/home/$USER/.fnm:$PATH
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
 
 # Install Node using Fnm
+fnm use --install-if-missing 20
+
+# for homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+export PATH=/opt/homebrew/bin:$PATH
+
+# Install node on mac os
+curl -fsSL https://fnm.vercel.app/install | bash
+
+# download and install Node.js
 fnm use --install-if-missing 20
 
 

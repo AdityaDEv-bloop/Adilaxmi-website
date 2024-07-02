@@ -4,7 +4,7 @@ import './body.css';
 import { windowWidth } from '../../const';
 
 const Body=()=>{
-  if (windowWidth && windowWidth>768) {
+  if (windowWidth && windowWidth>768 && windowWidth<1400) {
       return(
         <div className="container-body">
           <video className='imageContainer' autoPlay muted loop >
@@ -20,13 +20,13 @@ const Body=()=>{
   }
   else if (windowWidth && windowWidth>1400) {
     return(
-      <div className="container-body">
-        <video className='imageContainer' autoPlay muted loop >
+      <div className="container-body-big">
+        <video className='imageContainer-big' autoPlay muted loop >
           <source src={require('../../static/images/video.mp4')} type="video/mp4"/>
         </video>
-        <div className='videoOverley'></div>
+        <div className='videoOverley-big'></div>
         <div className='titelContainer'>
-            <h2 className='titleMain-big'>ADI LAXMI <span className='titelSpan-small'>Exports</span></h2>
+            <h2 className='titleMain-big'>ADI LAXMI <span className='titelSpan-big'>Exports</span></h2>
             <p className='titleParagraph-big'>World’s Largest Rice Millers and Basmati Rice Exporters</p>
         </div>
       </div>
