@@ -44,13 +44,13 @@ const Contact=()=>{
             <Row>
                 <Col>
                     <div className="contactInfoContainer">
-                        <div className="contactText">
+                        <div className={windowWidth>1400?"contactText-big":"contactText"}>
                             <h1>Contact Us</h1>
                             <h1> For More Information </h1>
                             <p>Enter your enquery here, our team will be contact you soon</p>
                             <p>We are happy to serve you.</p>
                         </div>
-                        <div className="contactInfo">
+                        <div className={windowWidth>1400?"contactInfo-big":"contactInfo"}>
                             <li><MdOutlineCall/> : +91 6290873065</li>
                             <li><MdMarkEmailRead/> : contact@adilaxmiexports.com</li>
                         </div>
@@ -58,7 +58,7 @@ const Contact=()=>{
                 </Col>
                 <Col>
                 <Card style={{ marginTop:40,borderStyle:'none'}}>
-        <Card.Body style={{ backgroundColor:"#CFCFCF",width:'75%',marginLeft:"12.5%"}}>
+        <Card.Body style={windowWidth>1400?{ backgroundColor:"#CFCFCF",width:'60%',marginLeft:"10%"}:{ backgroundColor:"#CFCFCF",width:'70%',marginLeft:"12.5%"}}>
             <Row>
                 <Form style={{textAlign:'left'}} onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput2" >

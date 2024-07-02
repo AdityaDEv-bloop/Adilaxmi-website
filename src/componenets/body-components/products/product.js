@@ -7,6 +7,7 @@ import "./product.css";
 import { windowWidth } from '../../../const';
 
 const Products=()=>{
+    console.log(windowWidth)
     if (windowWidth && windowWidth>768) {
         return(
             <div className='productsContainer'>
