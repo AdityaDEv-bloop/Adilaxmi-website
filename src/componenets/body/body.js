@@ -4,7 +4,7 @@ import './body.css';
 import { windowWidth } from '../../const';
 
 const Body=()=>{
-  if (windowWidth && windowWidth>768 && windowWidth<1400) {
+  if (windowWidth && windowWidth>768 && windowWidth<1800) {
       return(
         <div className="container-body">
           <video className='imageContainer' autoPlay muted loop >
@@ -18,7 +18,7 @@ const Body=()=>{
         </div>
     )
   }
-  else if (windowWidth && windowWidth>1400) {
+  else if (windowWidth && windowWidth>1800) {
     return(
       <div className="container-body-big">
         <video className='imageContainer-big' autoPlay muted loop >
