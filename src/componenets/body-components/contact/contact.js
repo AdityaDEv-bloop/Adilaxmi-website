@@ -47,12 +47,12 @@ const Contact=()=>{
                         <div className={windowWidth>1800?"contactText-big":"contactText"}>
                             <h1>Contact Us</h1>
                             <h1> For More Information </h1>
-                            <p>Enter your enquery here, our team will be contact you soon</p>
+                            <p>Enter your enquery here, our team will contact you soon</p>
                             <p>We are happy to serve you.</p>
                         </div>
                         <div className={windowWidth>1800?"contactInfo-big":"contactInfo"}>
                             <li><MdOutlineCall/> : +91 6290873065</li>
-                            <li><MdMarkEmailRead/> : contact@adilaxmiexports.com</li>
+                            <li><MdMarkEmailRead/> : contact@adilaxmiexport.com</li>
                         </div>
                     </div>
                 </Col>
