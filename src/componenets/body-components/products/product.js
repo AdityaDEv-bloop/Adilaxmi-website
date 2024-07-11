@@ -15,7 +15,7 @@ const Products=()=>{
                     <Row>
                         <Col>
                         <Card style={{ width: '18rem',height:"32rem" }}>
-                            <Card.Img variant="top" src={require('../../../static/images/rice2.png')} />
+                            <Card.Img variant="top" src={require('../../../static/images/rice1.png')} />
                             <Card.Body>
                                 <Card.Title><h3>1121 Basmati Rice</h3></Card.Title>
                                 <Card.Text>
@@ -29,7 +29,7 @@ const Products=()=>{
                         </Col>
                         <Col>
                         <Card style={{ width: '18rem',height:"32rem" }}>
-                            <Card.Img variant="top" src={require('../../../static/images/rice1.png')} />
+                            <Card.Img variant="top" src={require('../../../static/images/rice2.png')} />
                             <Card.Body>
                                 <Card.Title><h3>1718 Basmati Rice</h3></Card.Title>
                                 <Card.Text>
@@ -81,7 +81,7 @@ const Products=()=>{
                     <Row>
                         <Col style={{padding:5}}>
                         <Card style={{ width: '10rem',height:"18rem" }}>
-                            <Card.Img variant="top" src={require('../../../static/images/rice2.png')} />
+                            <Card.Img variant="top" src={require('../../../static/images/rice1.png')} />
                             <Card.Body>
                                 <Card.Title><h4>1121 Basmati Rice</h4></Card.Title>
                                 {/* <Card.Text>
@@ -95,7 +95,7 @@ const Products=()=>{
                         </Col>
                         <Col style={{padding:5}}>
                         <Card style={{ width: '10rem',height:"18rem" }}>
-                            <Card.Img variant="top" src={require('../../../static/images/rice1.png')} />
+                            <Card.Img variant="top" src={require('../../../static/images/rice2.png')} />
                             <Card.Body>
                                 <Card.Title><h4>1718 Basmati Rice</h4></Card.Title>
                                 {/* <Card.Text>
