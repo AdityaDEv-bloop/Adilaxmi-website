@@ -25,7 +25,7 @@ const Footer=()=>{
                         <h3>Adi Laxmi Exports</h3>
                         <p>Leading basmati rice exporters in India must comprehend the needs and desires of their customers in order to provide goods of unparalleled quality and remarkable value.</p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    <div class="col item social"><a href="https://www.facebook.com/share/aakMSrjM5VtrRf64/?mibextid=qi2Omg"><i class="icon ion-social-facebook"></i></a><a href="https://x.com/adilaxmiexport"><i class="icon ion-social-twitter"></i></a><a href="https://linkedin.com/company/adi-laxmi-export"><i class="icon ion_social_linkedin"></i></a><a href="https://www.instagram.com/adilaxmirice?utm_source=qr&igsh=MXdpN3RtandscWFy"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
                 <p class="copyright">Adi Laxmi Exports © 2024</p>
             </div>
