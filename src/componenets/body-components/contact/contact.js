@@ -52,7 +52,7 @@ const Contact=()=>{
                         </div>
                         <div className={windowWidth>1800?"contactInfo-big":"contactInfo"}>
                             <li><MdOutlineCall/> : +91 6290873065</li>
-                            <li><MdMarkEmailRead/> : contact@adilaxmiexport.com</li>
+                            <li><MdMarkEmailRead/> : info@adilaxmiexport.com</li>
                         </div>
                     </div>
                 </Col>
